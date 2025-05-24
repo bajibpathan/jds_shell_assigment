@@ -17,11 +17,15 @@ fi
 
 
 TOP_WORDS=${2:-5}
+TEMP_FILE="/tmp/sorted_words.txt"
 
 # Counting the words and their repetion
-grep -wo '[[:alnum:]]\+' $1 | sort | uniq -c | sort -rk 1 > SORTED_WORDS
-TOTAL_WORDS=$(cat SORTED_WORDS | wc -l)
-RESULT=$(awk -F " " '{print $2 " " $1}' SORTED_WORDS | head -n $TOP_WORDS)
+grep -wo '[[:alnum:]]\+' $1 | sort | uniq -c | sort -rk 1 > $TEMP_FILE
+TOTAL_WORDS=$(cat $TEMP_FILE | wc -l)
+RESULT=$(awk -F " " '{print $2 " " $1}' $TEMP_FILE | head -n $TOP_WORDS)
+
+#Cleaning the temp files
+rm -rf $TEMP_FILE
 
 # Displaying the results
 echo "+------------------------------------------+"
