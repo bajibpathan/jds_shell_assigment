@@ -1,5 +1,11 @@
 #!/bin/bash
 
+############## Approach ##########################
+# Sort the words and store them in a temp file
+# Count the unique occurenaces using uniq -c
+# Display them in the required format using awk
+############## Approach ##########################
+
 # Sourcing all the color variables 
 source ./colors.sh
 
@@ -20,7 +26,7 @@ TOP_WORDS=${2:-5}
 TEMP_FILE="/tmp/sorted_words.txt"
 
 # Counting the words and their repetion
-grep -wo '[[:alnum:]]\+' $1 | sort | uniq -c | sort -rk 1 > $TEMP_FILE
+sort $1 | uniq -c | sort -rk 1 > $TEMP_FILE
 TOTAL_WORDS=$(cat $TEMP_FILE | wc -l)
 RESULT=$(awk -F " " '{print $2 " " $1}' $TEMP_FILE | head -n $TOP_WORDS)
 

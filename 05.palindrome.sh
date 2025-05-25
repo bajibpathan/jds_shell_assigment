@@ -1,5 +1,14 @@
 #!/bin/bash
 
+############## Approach ##########################
+# Reverse the given word using "rev" command
+# Store the result in a variable
+# Compare the reverse result with original
+# If both are equal -> Palindrome
+# Otherwise -> Not a Palindrome
+############## Approach ##########################
+
+
 source ./colors.sh
 
 # Banner 

@@ -1,5 +1,11 @@
 #!/bin/bash
 
+############## Approach ##########################
+# Store the number of files in the given patter in a loop
+# Loop through each file 
+# While looping through, using "sed" replace the original
+############## Approach ##########################
+
 source ./colors.sh
 
 # Arguments validation

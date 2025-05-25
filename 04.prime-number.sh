@@ -1,4 +1,14 @@
 #!/bin/bash
+
+############## Approach ##########################
+# Prime numbers are defined as numbers greater than 1 
+# that have no divisors other than 1 and themselves
+# Loop through number of times of a given number
+# Each loop, divide the number with loop counter
+# if it is "Zero", then it's a prime number
+# Otherwise -> Not a prime number
+############## Approach ##########################
+
 source ./colors.sh
 
 # Check if cowsay package is installed. If not, it will install.

@@ -1,5 +1,12 @@
 #!/bin/bash
 
+############## Approach ##########################
+# Find the occurences of a,e,i,o,u using grep
+# Count them using "wc"
+# Store the count in a variable
+############## Approach ##########################
+
+
 source ./colors.sh
 
 # Check if cowsay package is installed. If not, it will install.

@@ -1,5 +1,12 @@
 #!/bin/bash
 
+############## Approach ##########################
+# Initialize factorial with 1
+# Loop through the given number of times
+# Each loop multiply the loop counter and store it Factorial
+# Repeat the process until counter equal to given number
+############## Approach ##########################
+
 source ./colors.sh
 
 # Banner 

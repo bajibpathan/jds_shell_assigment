@@ -1,5 +1,12 @@
 #!/bin/bash
 
+############## Approach #################
+# Divide the given number with 10 and store the reminder
+# Add the reminder to a SUM variable
+# Divide the given number with 10 and store the result in the same NUMBER 
+# Repeat the process until Number not equal to 0
+############## Approach #################
+
 source ./colors.sh
 
 # Banner 

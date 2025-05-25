@@ -1,5 +1,11 @@
 #!/bin/bash
 
+############## Approach ##########################
+# Divide the number by 2
+# If the number equal to '0' -> Even
+# Otherwise -> Odd
+############## Approach ##########################
+
 source ./colors.sh
 
 # Check if cowsay package is installed. If not, it will install.

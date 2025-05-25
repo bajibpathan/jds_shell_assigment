@@ -1,5 +1,10 @@
 #!/bin/bash
 
+############## Approach ############
+# Reversing the number using "rev" command 
+# Storing the result and printing it.
+############## Approach ############
+
 source ./colors.sh
 
 # Banner 
