@@ -2,7 +2,7 @@
 source ./colors.sh
 
 # Check if cowsay package is installed. If not, it will install.
-sudo dnf module list cowsay &> /dev/null
+sudo dnf list installed cowsay &> /dev/null
 if [ $? -ne 0 ]; then
     sudo dnf install cowsay -y &> /dev/null
 fi
